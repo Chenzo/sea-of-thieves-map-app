@@ -1,0 +1,52 @@
+error_log
+error_log/
+node_modules
+node_modules/
+.sass-cache/
+*.log
+maps
+maps/
+.vscode/
+
+#merge files
+*.orig
+
+
+#dreamweaver files#
+_notes
+_notes/
+
+
+#IntelliJ files#
+.idea
+.idea/
+ROOT.iml
+
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+
+
+
+# Sublime Files #
+*.sublime-project
+*.sublime-workspace
+
+
+# SOTM #
+sot_map_tiles
+sot_map_tiles/*
+tiles
+tiles/*
+tiles_v2
+tiles_v2/*
+www/includes/gtm.php
+
+
+# App platform binaries and built files
+/platforms
+
+# Optional to ignore plugin Git clones
+/plugins
