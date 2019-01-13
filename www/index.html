@@ -1,30 +1,21 @@
 <!DOCTYPE html>
-
 <html>
     <head>
+        <meta charset="utf-8">
+        <title>Unofficial Interactive Sea Of Thieves Map</title>
 
         <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
-        <meta name="format-detection" content="telephone=no">
-        <meta name="msapplication-tap-highlight" content="no">
-        <meta name="viewport" content="initial-scale=1, width=device-width, height=device-height, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no">
+<meta name="msapplication-tap-highlight" content="no">
+<meta name="viewport" content="initial-scale=1, width=device-width, height=device-height, viewport-fit=cover">
 
         
-        <title>Unofficial Interactive Sea Of Thieves Map</title>
-        <link rel="apple-touch-icon" href="images/sotm_logo-192.png">
-        <link rel="apple-touch-icon" sizes="192x192" href="images/sotm_logo-192.png">
-        <link rel="apple-touch-icon" sizes="512x512" href="images/sotm_logo-512.png">
-
-        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
-
-        <!-- <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> -->
-
-        <link rel="stylesheet" type="text/css" href="css/index.css">
         <link rel="stylesheet" href="css/vendor/leaflet.css" />
         <link rel="stylesheet" href="css/vendor/leaflet.search.css" />
-        <link rel="stylesheet" href="css/styles.css?v=1546806310625" /> <!-- ?v=1546806310625 -->
+        <link rel="stylesheet" href="css/styles.css?v=1546809540432" /> <!-- ?v=1546809540432 -->
+
     </head>
-    <body class="home">
+    <body class="home app">
 
         <section class="sotm_wrapper">
 
@@ -36,7 +27,6 @@
 
 
                 <div class="island-finder buttonGroup">
-                    <!-- <p>ISLAND FINDER</p> -->
                     <img src="images/map_finder_icon.png" class="mapfinder_image" />
                     <button type="button" data-dir="left" class="js-searchforisland"><span class="icon icon-arrow1_left"></span></button>
                     <button type="button" data-dir="right" class="js-searchforisland"><span class="icon icon-arrow1_right"></span></button>
@@ -84,6 +74,10 @@
                 
 
                 <div class="buttonGroup subcontrols">
+                    <button class="js-fullscreen web-only">
+                        <img src="images/fullscreen_icon.png" class="open_fs" />
+                        <img src="images/close_fullscreen_icon.png" class="close_fs" />
+                    </button>
                     <button class="js-share"><img src="images/share_link_icon.png" /></button>
                     <a href="/about" target="_blank"><img src="images/info_icon.png" /></a>
                     <button class="js-settings gear app-only"><img src="images/gear_icon.png" /></button>
@@ -137,14 +131,12 @@
         <script src="js/vendor/L.SimpleGraticule-sot.js"></script>
         <script src="js/vendor/leaflet-hash.js"></script>
         <script src="js/vendor/jquery-3.3.1.min.js"></script>
-        <script src="js/sotm.js?v=1546806310625"></script> <!-- ?v=1546806310625 -->
+        <script src="js/sotm.js?v=1546809540432"></script> 
 
+                    <script type="text/javascript" src="cordova.js"></script>
+            <script type="text/javascript" src="js/index.js"></script>
         
-    <script>
-
-
-</script>
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
     </body>
 </html>
+
+
